@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #f9fafb;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
+        
+        <!-- Header -->
+        <div style="background-color: #000000; padding: 32px 24px; text-align: center;">
+            <div style="width: 64px; height: 64px; background-color: #ffffff; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+                <svg style="width: 32px; height: 32px; color: #000000;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                </svg>
+            </div>
+            <h1 style="color: #ffffff; margin: 0; font-size: 32px; font-weight: 700;">Meeting Scheduled</h1>
+            <p style="color: #d1d5db; margin: 8px 0 0 0; font-size: 16px;">Eureka! Mentorship Network</p>
+        </div>
+        
+        <!-- Content -->
+        <div style="padding: 32px 24px;">
+            <div style="background-color: #f3f4f6; border: 1px solid #d1d5db; border-radius: 8px; padding: 24px; margin: 0 0 32px 0;">
+                <h3 style="color: #000000; margin: 0 0 16px 0; font-size: 18px; font-weight: 600;">Meeting Details</h3>
+                <div style="color: #374151; font-size: 16px; line-height: 1.8;">
+                    <div style="margin-bottom: 12px;"><strong>Mentor:</strong> {{ mentor_name }}</div>
+                    <div style="margin-bottom: 12px;"><strong>Startup:</strong> {{ startup_name }}</div>
+                    <div style="margin-bottom: 12px;"><strong>Date & Time:</strong> {{ formatted_time }}</div>
+                    <div style="margin-bottom: 0;"><strong>Duration:</strong> 30 minutes</div>
+                </div>
+            </div>
+            
+            <!-- Join Button -->
+            <div style="text-align: center; margin: 32px 0;">
+                <a href="{{ tracking_link }}" style="display: inline-block; background-color: #000000; color: #ffffff; text-decoration: none; padding: 16px 40px; border-radius: 8px; font-size: 16px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: all 0.2s;">
+                    Join Meeting
+                </a>
+            </div>
+            
+            <div style="background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; margin: 24px 0;">
+                <p style="margin: 0; color: #374151; font-size: 14px;">
+                    <strong>Meeting Link:</strong> <a href="{{ tracking_link }}" style="color: #000000; text-decoration: underline;">{{ tracking_link }}</a>
+                </p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 32px; padding-top: 24px; border-top: 1px solid #e5e7eb;">
+                <p style="color: #6b7280; font-size: 14px; margin: 0;">
+                    This meeting was organized by EMN - Eureka! Mentorship Network<br>
+                    Connecting entrepreneurs with experienced mentors for business growth
+                </p>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div style="background-color: #f9fafb; padding: 16px 24px; text-align: center; border-top: 1px solid #e5e7eb;">
+            <p style="color: #6b7280; margin: 0; font-size: 12px;">© 2025 Eureka! Mentorship Network. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

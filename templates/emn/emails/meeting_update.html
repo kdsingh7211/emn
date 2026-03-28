@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #f9fafb;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
+        
+        <!-- Header -->
+        <div style="background-color: #000000; padding: 32px 24px; text-align: center;">
+            <div style="width: 64px; height: 64px; background-color: #ffffff; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+                <svg style="width: 32px; height: 32px; color: #000000;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+            </div>
+            <h1 style="color: #ffffff; margin: 0; font-size: 32px; font-weight: 700;">Meeting {{ action|title }}</h1>
+            <p style="color: #d1d5db; margin: 8px 0 0 0; font-size: 16px;">EMN Update</p>
+        </div>
+        
+        <!-- Content -->
+        <div style="padding: 32px 24px;">
+            <p style="color: #374151; font-size: 16px; line-height: 1.6; margin: 0 0 24px 0;">Dear {{ startup_name }},</p>
+            
+            <p style="color: #374151; font-size: 16px; line-height: 1.6; margin: 0 0 24px 0;"><strong>{{ mentor_name }}</strong> has {{ action }} your meeting.</p>
+            
+            {% if new_time %}
+            <div style="background-color: #f3f4f6; border: 1px solid #d1d5db; border-radius: 8px; padding: 24px; margin: 24px 0;">
+                <p style="color: #374151; font-size: 16px; line-height: 1.6; margin: 0;"><strong>New Meeting Time:</strong> {{ new_time }}</p>
+            </div>
+            {% endif %}
+            
+            <p style="color: #374151; font-size: 16px; line-height: 1.6; margin: 0 0 32px 0;">Please check your scheduled meetings for more details.</p>
+            
+            <div style="text-align: center; margin: 32px 0;">
+                <a href="https://ecell.in/emn/scheduled-meetings" style="display: inline-block; background-color: #000000; color: #ffffff; text-decoration: none; padding: 12px 32px; border-radius: 8px; font-size: 16px; font-weight: 600;">View Meetings</a>
+            </div>
+            
+            <p style="color: #374151; font-size: 16px; line-height: 1.6; margin: 24px 0 0 0;">Best regards,<br><strong>EMN Team<br>E-Cell, IIT Bombay</strong></p>
+        </div>
+        
+        <!-- Footer -->
+        <div style="background-color: #f9fafb; padding: 16px 24px; text-align: center; border-top: 1px solid #e5e7eb;">
+            <p style="color: #6b7280; margin: 0; font-size: 12px;">© 2025 E-Cell, IIT Bombay. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
